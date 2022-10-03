@@ -1,6 +1,9 @@
 ## Data Engineer Steel Eye Submission
 1. run python main.py to perform perform downloading, extracting csv content , stores all intermediary files in temp folder and then uploading to S3.
-
+2. <img src="aws_upload.png"
+     alt="Steel upload to bucket"
+     style="float: left; margin-right: 10px;" />
+     
 ## Break Down of code
 
 Stage 1:
