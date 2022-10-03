@@ -21,7 +21,7 @@ def main(f:str) -> None:
     logging.info("Download started")
     x = DownloadFiles(f,'./temp')
     x.download_zip()
-    logging.info("Download Zip and extracted files")
+    logging.info("Downloaded Zip and extracted files")
     
     file_name = glob.glob('./temp/*.xml')[0]
     logging.info("Generating CSV Files")
@@ -33,7 +33,14 @@ def main(f:str) -> None:
     x = AWSOps()
     x.upload_bucket('./temp/main.csv')
     logging.info("Upload Completed !")
-
+    logging.info("Clearing up resources")
+    files = glob.glob('./temp')
+    for file in files:
+        if file.split('.')[-1]=='csv':
+            continue
+        else:
+            os.remove(file)
+    logging.info("Resource cleaning completed!")
     return None
 
 

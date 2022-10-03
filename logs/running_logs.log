@@ -1,7 +1,8 @@
 [2022-10-04 00:18:11,765: INFO: main]: Download started
-[2022-10-04 00:18:15,105: INFO: main]: Download Zip and extracted files
+[2022-10-04 00:18:15,105: INFO: main]: Downloaded Zip and extracted files
 [2022-10-04 00:18:15,105: INFO: main]: Generating CSV Files
 [2022-10-04 00:18:23,857: INFO: main]: CSV File generation completed!
 [2022-10-04 00:18:23,858: INFO: main]: Uploading to AWS
 [2022-10-04 00:18:38,481: INFO: main]: Upload Completed !
-
+[2022-10-04 00:20:38,501: INFO: main]: Clearing up resources
+[2022-10-04 00:20:38,506: INFO: main]: Resource cleaning completed!
